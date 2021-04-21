@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box; 
+}
+ 
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em; 
+}
+
+header {
+    background-color: rgb(26, 61, 103);
+    margin: auto;
+    padding: 2em 0em 0.35em 0em;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+footer {
+    padding-left: 4em;
+    padding-right: 4em;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(240, 200, 210);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.7em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.2em;
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    color: rgb(26, 61, 103);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    padding: 1em 0 0 0;
+}
+
+h3 {
+    color: rgb(26, 61, 103);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 0em;
+}
+
+p {
+    color: rgb(26, 61, 103);
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1em;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+}
+
+.main-navigation {
+    color: white;
+    margin: 0;
+    height: fit-content;
+}
+
+.main-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: fit-content;
+}
+
+.main-navigation li {
+    width: auto;
+    display: inline;
+}
+
+.main-navigation li a {
+    color: white;
+    padding: 0.5em 1.5em;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    background-color: rgb(15, 40, 80);
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+}
+
+.main-navigation li a.current-page {
+    color: rgb(26, 61, 103);
+    background-color: rgb(240, 200, 210);
+    font-weight: 700;
+}
+
+a {
+    color: rgb(26, 61, 103);
+    list-style: none;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    list-style: none;
+}
+
+main ul {
+    background-color: white;
+    border-radius: 6px;
+    padding: auto;
+}
+
+main ul li {
+    margin-left: 2em;
+    padding: 0.2em 0em;
+    color: rgb(26, 61, 103);
+}
+
+main section {
+    max-width: 500px;
+    margin: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(240, 200, 210);
+    padding-bottom: 1.5em;
+    padding-top: 0.5em;
+}
+
+.footerBeneden {
+    position: static;
+    margin-top: 2em;
+}
+
+#fotoPim {
+    border-radius: 6px;
+    border: 3px solid rgb(26, 61, 103);
+	background-color: #fcfcfc;
+}
+
+/* Blog Post */
+
+.blogContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    margin: -1em;
+    height: 900px;
+}
+
+.blogPost {
+    border: 1px solid black;
+    margin: 1em;
+}
+
+/* align self heeft geen zin want er is geen align items, de items hebben allemaal dezelfde afmeting */
+
+.blogItem3 {
+    border: tomato 1px solid;
+    flex-grow: 1;
+}
+
+.blogItem4 {
+    border: tomato 1px solid;
+    flex-grow: 2;
+}
+
+.blogPost img {
+    width: 200px;
+    border-radius: 6px;
+    border: 3px solid rgb(26, 61, 103);
+}
+
+/* MEDIA QUIRIES 
+
+// Smartphones (portrait)
+minimale breedte : 320px;
+
+// Tablets (portrait)
+minimale breedte : 768px
+
+// Desktop 
+minimale breedte : 1024px
+
+*/
+
+@media (min-width: 768px) {
+    main section {
+        max-width: 600px ;
+    }
+}
+
+@media (min-width: 1024px) {
+    main section {
+        max-width: 60% ;
+    }
+
+    p {
+        line-height: 2em;
+        font-size: 0.95em;
+    }
+}
